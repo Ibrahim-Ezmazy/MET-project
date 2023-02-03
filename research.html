@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+            <div class="container ms-auto">
+                <a class="navbar-brand ms-5 fs-5 fw-bold ps-5" href="index.html">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse  navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-5 pe-5">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+
+    <section >
+        <div class="container ">
+            <h1 class="text-center fs-3 display-3 text-white mt-4 fw-bold">My research</h1>
+            <div class="row pb-5">
+
+                <script>
+                    for (let index = 1; index < 5; index++) {
+                        document.write(`
+                         <div class="col-md-6">
+                    <div class="card text-center mt-4 p-2">
+                        <img src="images/proj-${index}.jpg" alt="">
+                        <h4 class="my-3">Lorem, ipsum dolor.</h4>
+                        <a href="proj-${index}.html" class="btn btn-info p-2 mx-auto mb-2 w-25">Details</a>
+                    </div>
+                </div>
+                        `)
+                        
+                    }
+                </script>
+               
+
+               
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-center text-white fw-bold p-4 ">
+Design by Eng: ibrahim <i class="fa-regular fa-copyright"></i> 2023.
+    </footer>
+</header>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
